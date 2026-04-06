@@ -1,0 +1,28 @@
+# 1. Ve al directorio donde está tu script
+cd ~/devops-training/week1/day5
+
+# 2. Verifica que el script existe y tiene permisos de ejecución
+ls -lh server_manager.sh
+
+# 3. Prueba agregar servidores
+./server_manager.sh add [IP_ADDRESS]
+./server_manager.sh add [IP_ADDRESS]
+./server_manager.sh add 10.0.0.5
+
+# 4. Lista todos los servidores agregados
+./server_manager.sh list
+
+# 5. Ver el log de operaciones
+cat server_manager.log
+
+# 6. Ver el archivo de servidores
+cat servers.txt
+
+# 7. Prueba eliminar un servidor
+./server_manager.sh remove [IP_ADDRESS]
+
+# 8. Lista de nuevo para verificar que se eliminó
+./server_manager.sh list
+
+# 9. Ver la ayuda del comando
+./server_manager.sh
